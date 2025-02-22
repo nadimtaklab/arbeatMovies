@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "563025171922",
+    "project_id": "arbeatmovieapps",
+    "storage_bucket": "arbeatmovieapps.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:563025171922:android:6930a44758d336984e640b",
+        "android_client_info": {
+          "package_name": "com.arbeat.movieapps"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZmeosKXAMuwLF-Devm1RXoSTc4yyGh54"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
