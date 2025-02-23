@@ -1,5 +1,5 @@
 [versions]
-agp = "8.7.3"
+agp = "8.8.1"
 kotlin = "2.0.0"
 coreKtx = "1.15.0"
 junit = "4.13.2"
@@ -14,6 +14,8 @@ coilVersion = "3.1.0"
 foundationComposeVersion = "1.7.8"
 livedataVersion = "1.7.8"
 accompanisPagerVersion = "0.36.0"
+googleGmsGoogleServicesVersion = "4.4.2"
+firebaseDatabaseVersion = "21.0.0"
 
 
 [libraries]
@@ -39,10 +41,12 @@ compose-foundation = {group="androidx.compose.foundation", name="foundation", ve
 compose-livedata = {group="androidx.compose.runtime", name="runtime-livedata", version.ref="livedataVersion"}
 accompanist-pager = {group="com.google.accompanist", name="accompanist-pager", version.ref="accompanisPagerVersion"}
 accompanist-pager-indicator = {group="com.google.accompanist", name="accompanist-pager-indicators", version.ref="accompanisPagerVersion"}
+firebase-database = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebaseDatabaseVersion" }
 
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServicesVersion" }
 
