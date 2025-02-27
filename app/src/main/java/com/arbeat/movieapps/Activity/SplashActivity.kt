@@ -1,5 +1,6 @@
-package com.arbeat.movieapps
+package com.arbeat.movieapps.Activity
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
@@ -34,14 +35,17 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.arbeat.movieapps.R
 
 
-class SplashActivity : AppCompatActivity() {
+class SplashActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setContent {
-            IntroScreen(onGetInClick = {})
+            IntroScreen(onGetInClick = {
+                startActivity(Intent(this, LoginActivity::class.java))
+            })
         }
     }
 }
@@ -78,7 +82,7 @@ fun FooterSection(onGetInClick: () -> Unit) {
             .height(200.dp)
     ){
         Image(
-            painter = painterResource(id=R.drawable.bg2),
+            painter = painterResource(id= R.drawable.bg2),
             contentDescription = null,
             contentScale = ContentScale.Crop,
             modifier = Modifier.matchParentSize()

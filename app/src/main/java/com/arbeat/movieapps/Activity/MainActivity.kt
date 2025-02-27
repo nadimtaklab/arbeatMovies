@@ -1,4 +1,4 @@
-package com.arbeat.movieapps
+package com.arbeat.movieapps.Activity
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
